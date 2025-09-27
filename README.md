@@ -31,13 +31,13 @@ Este es mi portafolio credo con lo visto en clases.
 #### En Linux / macOS
 
 ```bash
-python3 main.py
+html index.html
 ```
 
 #### En Windows
 
 ```bash
-python main.py
+html index.html
 
 ```
 
