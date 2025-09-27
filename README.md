@@ -59,4 +59,4 @@ python main.py
 ## Librerías Externas
 
 ## Link del proyecto en la web
-[Mi Proyecto en netfli](https://68d734748059a67f761b495e--tranquil-hotteok-c91c30.netlify.app/)
+[Mi Proyecto en netfli](https://68d76cbd3231343efaf92671--ubiquitous-heliotrope-96385c.netlify.app/)

@@ -1,9 +1,28 @@
+/* 🎨 Variables */
+:root {
+    --fondo: #1B0C1A;
+    --fondo-columna-oscuro: #4B2138;
+    --fondo-columna-medio: #6D3C52;
+    --texto: #FADCD5;
+    --verde: #6DC36D;
+}
+
+/* 🌍 General */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #1B0C1A;  /* Fondo oscuro */
-    color: #FADCD5;             /* Texto claro */
+    background-color: var(--fondo);
+    color: var(--texto);
 }
+
+h2, h3 {
+    color: var(--texto);
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* 🟦 Grid principal */
 .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -11,45 +30,46 @@ body {
     padding: 20px;
 }
 
+/* 📦 Columnas */
 .columna {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     padding: 20px;
     border-radius: 15px;
+    text-align: center;
+    color: var(--texto);
 }
 
 .columna:hover {
-    transform: translateY(-10px); /* se eleva 10px */
-    box-shadow: 0 100px 35px #2D222F;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
 }
 
 .izquierda, .derecha {
-    background-color: #4B2138;  /* Fondo oscuro para la columna izquierda */
-    color: #FADCD5; 
-    text-align: center;          
+    background-color: var(--fondo-columna-oscuro);
 }
+
 .centro, .proyectos {
-    background-color: #6D3C52;
-    text-align: center;
-    color: #FADCD5;
+    background-color: var(--fondo-columna-medio);
 }
+
+/* 🖼️ Imagen circular */
 img {
-    text-align: center;
     max-width: 50%;
     height: auto;
-    border: none;
-    border-radius: 50%; /* Hace la imagen redonda */
+    border-radius: 50%;
     transition: transform 0.5s ease;
-    box-shadow: 0 11px 45px #1B0C1A;
+    box-shadow: 0 11px 45px var(--fondo);
+    border: none;
 }
 
-#circulo{
-    width: 250px;         /* Ajusta el tamaño */
-    height: 250px;        /* Igual al width para que sea cuadrado */
-    object-fit: cover;    /* Para que no se deforme */
-    border-radius: 50%;   /* Esto la hace redonda */
-
+#circulo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
+/* ✨ Animación flotante */
 .flotar {
     animation: flotando 3s ease-in-out infinite;
 }
@@ -60,23 +80,24 @@ img {
     100% { transform: translateY(0); }
 }
 
-.izquierda img{
+.izquierda img {
     display: block;
     margin: 0 auto;
     max-width: 200px;
-    transform: traslateY(-12px) traslateX(12px);
+    transform: translateY(-12px) translateX(12px);
 }
 
+/* 📑 Tarjetas */
 .proyectos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;
 }
 
 .card {
-    background-color: #a04d7b; /* mismo estilo que tus columnas */
-    color: #FADCD5;
+    background-color: #a04d7b;
+    color: var(--texto);
     padding: 20px;
     border-radius: 15px;
     text-align: center;
@@ -84,76 +105,64 @@ img {
 }
 
 .card:hover {
-    transform: translateY(-10px); /* efecto de elevarse */
+    transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .card h3 a {
-    color: #FADCD5;
+    color: var(--texto);
     text-decoration: none;
     font-size: 22px;
     transition: color 0.3s ease;
 }
 
 .card h3 a:hover {
-    color: #6DC36D; /* se vuelve verde al pasar el cursor */
+    color: var(--verde);
 }
 
-
-h2, h3 {
-    color: #FADCD5;
-    margin-bottom: 10px;
-    font-size: 24px;
-    text-align: center;
-}
-
-#inf {
-    background-color: #6D3C52;
+/* 📋 Bloques de información */
+.bloque {
+    background-color: var(--fondo-columna-medio);
     display: block;
     padding: 10px;
     border-radius: 20px;
     margin-top: 15px;
 }
 
-#in {
-    background-color: #4B2138;
+.bloque-alt {
+    background-color: var(--fondo-columna-oscuro);
     display: block;
     padding: 10px;
     border-radius: 20px;
     margin-top: 15px;
 }
 
-#st {
+.titulo-seccion {
     text-decoration: underline;
     margin-bottom: 8px;
     font-size: 32px;
     text-align: center;
 }
 
+/* 🌍 Idiomas */
 .idioma {
-    display: flex;            /* Coloca el texto y la barra en la misma fila */
-    align-items: center;      /* Centra verticalmente */
-    gap: 45px;                /* Espacio entre el texto y la barra */
-    margin-bottom: 10px;      /* Separación entre filas */
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 10px;
 }
 
 .progress-container {
-    flex: 1;                  /* La barra ocupa todo el espacio disponible */
-    background-color: #FADCD5;
+    flex: 1;
+    background-color: var(--texto);
     border-radius: 25px;
     overflow: hidden;
     height: 30px;
 }
 
-.progress-container h2{
-    color: #FADCD5;
-    margin-bottom: 10px;
-    font-size: 24px;
-    text-align: center;
-}
 .progress-bar {
     height: 100%;
-    background-color: #6DC36D; /* Verde */
+    background-color: var(--verde);
     text-align: center;
     line-height: 30px;
     color: white;
@@ -161,8 +170,9 @@ h2, h3 {
     transition: width 0.5s ease;
 }
 
+/* 🎥 Video */
 .videoPersonal {
-    background-color: #6D3C52;
+    background-color: var(--fondo-columna-medio);
     padding: 15px;
     border-radius: 20px;
     margin-top: 20px;
@@ -174,3 +184,32 @@ h2, h3 {
     font-size: 28px;
     text-decoration: underline;
 }
+
+/*/* 📱 Responsividad  
+@media (max-width: 1024px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+    .proyectos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+    .proyectos {
+        grid-template-columns: 1fr;
+    }
+    #circulo {
+        width: 180px;
+        height: 180px;
+    }
+    .titulo-seccion {
+        font-size: 26px;
+    }
+    h2, h3 {
+        font-size: 20px;
+    }
+} */

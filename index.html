@@ -1,102 +1,110 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portafolio - Andrés Felipe Navas</title>
 </head>
 <body>
     <div class="contenedor">
         <!-- Columna izquierda-->
         <section class="columna izquierda">
-            <img id="circulo" class="flotar" src="assets/img/yo1.png" alt="foto">
-            <h2 class="flotar" >Andres Felipe Navas Alvear</h2>
+            <img id="circulo" class="flotar" src="assets/img/yo1.png" alt="Foto de Andrés">
+            <h2 class="flotar">Andrés Felipe Navas Alvear</h2>
             
-            <div id="inf" class="infPersonal">
-                <h2 id="st" >Informacion personal</h2>
-                <p>Edad: 17años</p>
+            <div class="bloque infPersonal">
+                <h2 class="titulo-seccion">Información personal</h2>
+                <p>Edad: 17 años</p>
                 <p>Estado Civil: Soltero</p>
-                <p>Genero: Masculino</p>
+                <p>Género: Masculino</p>
             </div>
-            <div id="inf" class="infContacto">
-                <h2 id="st">Informacion de contacto</h2>
-                <p>Telefono: 3214567890</p>
+
+            <div class="bloque infContacto">
+                <h2 class="titulo-seccion">Información de contacto</h2>
+                <p>Teléfono: 3214567890</p>
                 <p>Email: chirialvear@gmail.com</p>
                 <p>Ciudad: Bucaramanga</p>
-                <p>Pais: Colombia</p>
-                <p>Direccion:</p>
+                <p>País: Colombia</p>
+                <p>Dirección: -</p>
             </div>
         </section>
+
         <!-- Columna centro-->
         <section class="columna centro">
-            <div id="in" class="infAcademica" >
-            <h2 id="st" >Informacion Academica</h2>
-            <h3>Basica Primaria</h3>
-            <p>hola como estna que mas estoy mu buen </p> 
-            <h3>secundaria</h3>
-            <p>Instituto Politecnico</p>
-            <h3>tecnico</h3>
-            <p>Tecnico en Software (Sena)</p>
-            <h3>Profecionales</h3>
-            <p>No aplica</p>
+            <div class="bloque-alt infAcademica">
+                <h2 class="titulo-seccion">Información Académica</h2>
+                <h3>Básica Primaria</h3>
+                <p>Colegio Primario</p> 
+                <h3>Secundaria</h3>
+                <p>Instituto Politécnico</p>
+                <h3>Técnico</h3>
+                <p>Técnico en Software (SENA)</p>
+                <h3>Profesionales</h3>
+                <p>No aplica</p>
             </div>
-            <div id="in" class="ProyecPersonal">
-    <h2 id="st">Proyectos personales</h2>
-    <section class="proyectos">
-        <div class="card">
-            <h3><a href="https://github.com/craftube23/Guia-de-Ejercicios-Fisicos" target="_blank">Guia-de-Ejercicios-Fisicos</a></h3>
-            <p>una guía donde se pondrá aprueba el manejo de las ramas y de los gitmojis</p>
-            <p>creaado el 2024</p>
-            <p>Stack:   md</p>
 
-        </div>
-        <div class="card">
-            <h3><a href="https://github.com/craftube23/FLORES_AMARILLAS " target="_blank">FLORES_AMARILLAS</a></h3>
-            <p>un regalo muy especial para el 14/febrero y 21/septiembre</p>
-            <p>creaado el 2024</p>
-            <p>Stack:   html, css, js, md</p>
-        </div>
-        <div class="card">
-            <h3><a href="https://github.com/craftube23/ejercios" target="_blank">Login Register</a></h3>
-            <p>Unproyesto en creacion encargado en hacer un login regiter</p>
-            <p>creado el 2024</p>
-            <p>Stack:   Html, css, app, js,md</p>
-        </div>
+            <div class="bloque-alt ProyecPersonal">
+                <h2 class="titulo-seccion">Proyectos personales</h2>
+                <section class="proyectos">
+                    <div class="card">
+                        <h3><a href="https://github.com/craftube23/Guia-de-Ejercicios-Fisicos" target="_blank">Guía de Ejercicios Físicos</a></h3>
+                        <p>Guía para practicar Git, ramas y gitmojis.</p>
+                        <p>Creado en 2024</p>
+                        <p>Stack: MD</p>
+                    </div>
+
+                    <div class="card">
+                        <h3><a href="https://github.com/craftube23/FLORES_AMARILLAS" target="_blank">Flores Amarillas</a></h3>
+                        <p>Un regalo especial para el 14 de febrero y 21 de septiembre.</p>
+                        <p>Creado en 2024</p>
+                        <p>Stack: HTML, CSS, JS, MD</p>
+                    </div>
+
+                    <div class="card">
+                        <h3><a href="https://github.com/craftube23/ejercios" target="_blank">Login Register</a></h3>
+                        <p>Un proyecto en creación para implementar login y registro.</p>
+                        <p>Creado en 2024</p>
+                        <p>Stack: HTML, CSS, APP, JS, MD</p>
+                    </div>
+                </section>
+            </div>
         </section>
-        </div>
-        </section>
+
         <!-- Columna derecha-->
         <section class="columna derecha">
-            <div id="inf" class="procEmpresariales">
-            <h2 id="st">Proyectos Empresariales</h2>
-            <div class="card">
-            <h3><a href="https://github.com/craftube23/-Proyecto_Python_Navas_Andres_Castro-_Brayan- " target="_blank">CampusLands ERP</a></h3>
-            <p>CampusLands ERP es un sistema académico en Python que gestiona campers, rutas de entrenamiento, trainers y coordinadores. Permite inscripciones, matrículas, evaluaciones y reportes, con almacenamiento en JSON para mantener la información organizada y persistente.</p>
-            <p>creaado el 2024</p>
-            <p>Stack:   jason, py, md</p>
-        </div>
+            <div class="bloque procEmpresariales">
+                <h2 class="titulo-seccion">Proyectos Empresariales</h2>
+                <div class="card">
+                    <h3><a href="https://github.com/craftube23/-Proyecto_Python_Navas_Andres_Castro-_Brayan-" target="_blank">CampusLands ERP</a></h3>
+                    <p>CampusLands ERP es un sistema académico en Python que gestiona campers, rutas, trainers y coordinadores. Permite inscripciones, matrículas, evaluaciones y reportes con almacenamiento en JSON.</p>
+                    <p>Creado en 2024</p>
+                    <p>Stack: JSON, Python, MD</p>
+                </div>
             </div>
-            
-            <div id="inf" class="idiomas">
-                <h2 id="st">Idiomas</h2>
+
+            <div class="bloque idiomas">
+                <h2 class="titulo-seccion">Idiomas</h2>
                 <h3>Nativo</h3>
                 <p>Español</p>
-                <h2>Foráneo</h2>
+                <h3>Foráneo</h3>
                 <p>Inglés</p>
+
                 <div class="idioma">
                     <h4>Leer:</h4>
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 35%;">35%</div>
                     </div>
                 </div>
+
                 <div class="idioma">
                     <h4>Escribir:</h4>
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 15%;">15%</div>
                     </div>
                 </div>
+
                 <div class="idioma">
                     <h4>Hablar:</h4>
                     <div class="progress-container">
@@ -104,21 +112,22 @@
                     </div>
                 </div>
             </div>
-            <div id="inf" class="otrosEstudios">
-                <h2 id="st">Otros estudios</h2>
-                <p>Nombre: no aplica</p>
-                <p>Titulo: no aplica</p>
-                <p>Fecha: no aplica</p>
-                <p>Stack: no aplica</p>
-            </div>
-            <div id="inf" class="videoPersonal">
-            <h2 id="st">Presentación en Video</h2>
-                <video controls width="100%">
-                <source src="assets/" type="video/mp4">
-                Tu navegador no soporta el video.
-                </video>
+
+            <div class="bloque otrosEstudios">
+                <h2 class="titulo-seccion">Otros estudios</h2>
+                <p>Nombre: No aplica</p>
+                <p>Título: No aplica</p>
+                <p>Fecha: No aplica</p>
+                <p>Stack: No aplica</p>
             </div>
 
+            <div class="bloque videoPersonal">
+                <h2 class="titulo-seccion">Presentación en Video</h2>
+                <video controls width="100%">
+                    <source src="assets/video/video.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
         </section> 
     </div>
 </body>
